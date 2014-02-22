@@ -1,0 +1,236 @@
+.glass {
+	border: none;
+	border-radius: 7px;
+	background: transparent;
+	padding: 5px 7px;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #FFF;
+
+	text-shadow: 0 0 5px #454545;
+	background: rgba(255,255,255,0.2);
+	box-shadow: 0 0 8px 0 rgba(255,255,255,0.3) inset, 0 2px 18px rgba(0,0,0,0.3);
+}
+.glass[disabled],
+button.glass[disabled],
+button.glass:hover[disabled],
+button.glass:active[disabled] {
+	box-shadow: none;
+	color: #DDD;
+	color: rgba(255,255,255,0.8);
+	text-shadow: none;
+	background: rgba(255,255,255,0.1);
+	box-shadow: 0 0 12px 0 rgba(255,255,255,0.3) inset;
+}
+
+/************* button ****************/
+button.glass {
+	padding: 11px 17px;
+	outline: none;
+}
+button.glass:hover {
+	background: rgba(255,255,255,0.3);
+}
+button.glass:active {
+	background: rgba(100,100,100,0.3);
+}
+
+/************* input ****************/
+/************* textarea ****************/
+input.glass[type='text'],
+textarea.glass {
+	outline: none;
+	border: 7px solid rgba(255,255,255,0.2);
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(55,55,55,0.5) inset, 0 2px 18px rgba(0,0,0,0.3);
+}
+
+/************* ul ****************/
+ul.glass {
+	border-radius: 3px;
+	box-shadow: 0 0 2px 1px #FFF, 0 3px 18px rgba(0,0,0,0.3);
+	padding: 0;
+	overflow: hidden;
+}
+ul.glass > li {
+	list-style: none;
+	display: list-item;
+}
+ul.glass > li > a {
+	background: transparent;
+	border-bottom: 1px solid #999;
+	border-bottom-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 3px 0 rgba(255,255,255,0.7) inset;
+}
+ul.glass > li > a:hover {
+	background: rgba(255,255,255,0.2);
+}
+ul.glass > li > a:active {
+	background: rgba(100,100,100,0.3);
+}
+ul.glass > li:first-child > a {
+	border-top: none;
+}
+ul.glass > li:last-child > a {
+	border-bottom: none;
+}
+ul.glass > li.active > a {
+	background: rgba(255,255,255,0.3);
+}
+ul.glass > li > a {
+	padding: 11px 17px;
+	display: block;
+}
+
+/************* ul pagination ****************/
+ul.glass.pagination {
+	display: inline-block;
+	border: 1px solid #FFF;
+	border-color: rgba(255,255,255,0.1);
+	border-radius: 5px;
+}
+ul.glass.pagination > li {
+	display: inline;
+}
+ul.glass.pagination > li > a {
+	float: left;
+	border: none;
+	border-left: 1px solid rgba(255,255,255,0.3);
+	padding: 4px 12px;
+	box-shadow: none;
+}
+ul.glass.pagination > li:first-child > a {
+	border-left: none;
+}
+
+/************* ul nav-tab ****************/
+ul.glass.nav-tab {
+	display: block;
+	border: none;
+	box-shadow: none;
+	margin-bottom: 0;
+	border-radius: 0;
+	background: none;
+}
+ul.glass.nav-tab > li {
+	display: inline;
+}
+ul.glass.nav-tab > li > a {
+	float: left;
+	margin-right: 1px;
+	border: none;
+	padding: 4px 15px;
+	box-shadow: none;
+	background: rgba(255,255,255,0.1);
+	border-radius: 7px 7px 0 0;
+}
+ul.glass.nav-tab > li > a:hover {
+	background: rgba(255,255,255,0.2);
+}
+ul.glass.nav-tab > li.active > a {
+	background: rgba(255,255,255,0.3);
+	box-shadow: 5px 8px 10px rgba(0,0,0,0.3);
+}
+
+div.glass.nav-content {
+	border-top-left-radius: 0px;
+	box-shadow: 5px 8px 10px rgba(0,0,0,0.3);
+	background: rgba(255,255,255,0.3);
+}
+
+/************* img ****************/
+img.glass {
+	padding: 12px;
+}
+
+/************* table ****************/
+table.glass {
+	border: 1px solid rgba(255,255,255,0.5);
+	border-collapse: separate;
+	*border-collapse: collapse;
+	border-left: 0;
+	border-radius: 4px;
+	box-shadow: 0 0 2px 1px #FFF, 0 3px 18px rgba(0,0,0,0.3);
+	padding: 0;
+	border-spacing: 0;
+	font-weight: normal;
+}
+
+table.glass th,
+table.glass td {
+	padding: 11px 23px;
+	text-align: left;
+	vertical-align: top;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+table.glass th {
+	font-weight: bold;
+}
+
+table.glass thead th {
+	vertical-align: bottom;
+}
+
+table.glass caption + thead tr:first-child th,
+table.glass caption + tbody tr:first-child th,
+table.glass caption + tbody tr:first-child td,
+table.glass colgroup + thead tr:first-child th,
+table.glass colgroup + tbody tr:first-child th,
+table.glass colgroup + tbody tr:first-child td,
+table.glass thead:first-child tr:first-child th,
+table.glass tbody:first-child tr:first-child th,
+table.glass tbody:first-child tr:first-child td {
+	border-top: 0;
+}
+
+table.glass thead:first-child tr:first-child > th:first-child,
+table.glass tbody:first-child tr:first-child > td:first-child,
+table.glass tbody:first-child tr:first-child > th:first-child {
+	border-top-left-radius: 4px;
+}
+
+table.glass thead:first-child tr:first-child > th:last-child,
+table.glass tbody:first-child tr:first-child > td:last-child,
+table.glass tbody:first-child tr:first-child > th:last-child {
+	border-top-right-radius: 4px;
+}
+
+table.glass thead:last-child tr:last-child > th:first-child,
+table.glass tbody:last-child tr:last-child > td:first-child,
+table.glass tbody:last-child tr:last-child > th:first-child,
+table.glass tfoot:last-child tr:last-child > td:first-child,
+table.glass tfoot:last-child tr:last-child > th:first-child {
+	border-bottom-left-radius: 4px;
+}
+
+table.glass thead:last-child tr:last-child > th:last-child,
+table.glass tbody:last-child tr:last-child > td:last-child,
+table.glass tbody:last-child tr:last-child > th:last-child,
+table.glass tfoot:last-child tr:last-child > td:last-child,
+table.glass tfoot:last-child tr:last-child > th:last-child {
+	border-bottom-right-radius: 4px;
+}
+
+table.glass tfoot + tbody:last-child tr:last-child td:first-child {
+	border-bottom-left-radius: 0;
+}
+
+table.glass tfoot + tbody:last-child tr:last-child td:last-child {
+	border-bottom-right-radius: 0;
+}
+
+table.glass caption + thead tr:first-child th:first-child,
+table.glass caption + tbody tr:first-child td:first-child,
+table.glass colgroup + thead tr:first-child th:first-child,
+table.glass colgroup + tbody tr:first-child td:first-child {
+	border-top-left-radius: 4px;
+}
+
+table.glass caption + thead tr:first-child th:last-child,
+table.glass caption + tbody tr:first-child td:last-child,
+table.glass colgroup + thead tr:first-child th:last-child,
+table.glass colgroup + tbody tr:first-child td:last-child {
+	border-top-right-radius: 4px;
+}
