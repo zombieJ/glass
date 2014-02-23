@@ -7,13 +7,31 @@
 		<link href="../src/glass.css" rel="stylesheet" media="screen">
 
 		<style>
+			html, body {
+				padding: 0;
+				margin: 0;
+			}
 			body {
 				background: url('bac.jpg');
 				//background: black;
 			}
+			#cntr {
+				padding: 10px;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="glass navbar">
+			<h1>Glass</h1>
+			<ul class="nav">
+				<li><a>Home</a></li>
+				<li><a>About Us</a></li>
+				<li><a>Contact Us</a></li>
+				<li class="disabled"><a>Hello Glass</a></li>
+			</ul>
+		</div>
+
+<div id="cntr">
 		<button class="glass">Hello Glass !</button>
 		<button class="glass" disabled>Disable Glass !</button>
 
@@ -21,7 +39,7 @@
 			<li class="active"><a>Home</a></li>
 			<li><a>About Us</a></li>
 			<li><a>Contact Us</a></li>
-			<li><a>Hello Glass</a></li>
+			<li class="disabled"><a>Hello Glass</a></li>
 		</ul>
 
 		<img src="rain.jpg" width="300" class="glass" />
@@ -55,7 +73,7 @@
 		<ul class="glass pagination">
 			<li><a>&lt;</a></li>
 			<li><a>1</a></li>
-			<li><a>2</a></li>
+			<li class="disabled"><a>2</a></li>
 			<li><a>3</a></li>
 			<li><a>&gt;</a></li>
 		</ul>
@@ -65,7 +83,7 @@
 		<input type="text" class="glass" />
 		<button class="glass">Search</button>
 
-		<br />
+		<br /><br />
 
 		<textarea class="glass"></textarea>
 
@@ -78,5 +96,31 @@
 		</ul>
 		<div class="glass nav-content" style="height: 200px;">
 		</div>
+
+		<div class="clearfix">
+		<ul class="glass dropdown">
+			<li><a>Tab1</a></li>
+			<li class="divider"></li>
+			<li class="disabled"><a>Tab2</a></li>
+			<li><a>Tab3</a></li>
+		</ul>
+		</div>
+
+		<div class="glass modal">
+			<div class="modal-header">
+				<button type="button" class="close">&times;</button>
+				<h3 id="myModalLabel">Modal header</h3>
+			</div>
+			<div class="modal-body">
+				<p>One fine body¡­</p>
+			</div>
+			<div class="modal-footer">
+				<button>Cancel</button>
+				<button>OK</button>
+			</div>
+		</div>
+</div>
+
+		<div style="height: 500px;"></div>
 	</body>
 </html>
